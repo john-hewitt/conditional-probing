@@ -29,21 +29,11 @@ Written for the paper [Conditional probes: measuring usable information beyond a
 
         conda install --file requirements.txt
 
-1. Run the tests to see if everything is behaving as expected.
+1. Run your first experiment using a provided config file. This experiment trains and reports a part-of-speech probe on layer 5 of the `roberta-base` model.
 
-        cd vinfo
-        python -m testing
-        cd ..
+        python vinfo/experiment.py example/roberta768-upos-layer5-example.yaml
 
-1. Download a small portion of the [English Universal Dependencies (EWT) dataset](https://universaldependencies.org/treebanks/en_ewt/index.html) to get your feet wet.
-
-        bash ./download_example.sh
-
-1. Run your first experiment using a provided config file. This experiment trains and reports a part-of-speech probe on layer 8 of the `google/bert_uncased_L-2_H-128_A-2` model. (This model is also known as `BERT-tiny`; the string identifier is not coincidentally its [Huggingface Transformers identifier](https://huggingface.co/google/bert_uncased_L-2_H-128_A-2).)
-
-        python vinfo/experiment.py example/pos-bert-base.yaml
-
-1. Take a look at the config file, `example/pos-bert-base.yaml`. It states that the results and probe parameters are saved to `example/pos-bert-base.yaml.results`, a directory that's created if it doesn't already exist. If your experiment ran without error, you should see the following files in that directory:
+1. Take a look at the config file, `example/roberta768-upos-layer5-example.yaml`. It states that the results and probe parameters are saved to `example/`, a directory that would've been created if it hadn't already existed. If your experiment ran without error, you should see the following files in that directory:
 
         dev.v_entropy
         train.v_entropy
@@ -53,7 +43,7 @@ Written for the paper [Conditional probes: measuring usable information beyond a
        
     The `v_entropy` files store a single float: the variational entropy as estimated on the `{dev,train}` set. The `label_acc` files store a single float: the part-of-speech tagging accuracies on the `{dev,train}` set. The `params` file stores the probe parameters.
     
-1. Make a minimal change to the config file, say replacing the `google/bert_uncased_L-2_H-128_A-2` model with the `google/bert_uncased_L-4_H-128_A-2` model. This is the same dimensionality, but the model has a total of 4 layers, not 2. Do you expect the probe performance at layer 1 to go up or down, given that the model is deeper?
+1. Make a minimal change to the config file, say replacing the `roberta-base` model with another model, specified by its huggingface identifier string.
   
 ## YAML-centric Design
 
