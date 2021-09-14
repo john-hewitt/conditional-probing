@@ -1,0 +1,68 @@
+input_fields: &id_input_fields
+  - index
+  - token
+  - label
+
+cache: &id_cache !WholeDatasetCache
+  train_path: &idtrainpath  scripts/sst2_scripts/SST-2/train.tsv
+  dev_path: &iddevpath      scripts/sst2_scripts/SST-2/dev.tsv
+  test_path: &idtestpath    scripts/sst2_scripts/SST-2/test.tsv
+
+
+disk_reader: !SST2Reader &id_disk_reader
+  args: 
+    - device: cuda:0
+  train_path: *idtrainpath 
+  dev_path: *iddevpath     
+  test_path: *idtestpath   
+  cache: *id_cache
+
+dataset: !ListDataset
+  args: 
+    device: cuda:0
+  data_loader: *id_disk_reader
+  output_dataset: !AnnotationDataset
+    args: 
+      device: cuda:0
+    task: !SentenceClassificationTask
+      args: 
+        device: cuda:0
+      task_name: SST
+  input_datasets:
+        - !HuggingfaceData
+          args:
+            device: cuda:0
+          model_string: &model1string google/bert_uncased_L-12_H-768_A-12
+          cache: *id_cache
+
+model: !ListModel
+  args: 
+    device: cuda:0
+  models:
+   - !HuggingfaceModel
+       args:
+         device: cuda:0
+       model_string: *model1string
+       trainable: False
+       index: 2
+    
+probe: !SentenceMLPLabelProbe
+  args:
+    device: cuda:0
+  model_dim: 768
+  label_space_size: 3
+
+regimen: !ProbeRegimen
+  args:
+    device: cuda:0
+  max_epochs: 50
+  params_path: params
+  reporting_root: &id_reporting_root configs/mlp/sst2/bert768/layer2.yaml.results
+
+reporter: !IndependentLabelReporter
+  args:
+    device: cuda:0
+  reporting_root: *id_reporting_root
+  reporting_methods:
+    - label_accuracy
+    - v_entropy

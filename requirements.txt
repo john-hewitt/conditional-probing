@@ -1,0 +1,12 @@
+torch
+allennlp==1.0.0
+stanza
+tqdm
+transformers
+PyYAML
+click
+h5py
+python-Levenshtein
+matplotlib
+numpy
+seaborn

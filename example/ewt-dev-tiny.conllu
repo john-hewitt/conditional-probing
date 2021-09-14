@@ -1,0 +1,204 @@
+# sent_id = reviews-162253-0002
+# newpar id = reviews-162253-p0002
+# text = I used my card to purchase a meal on the menu and the total on my receipt was $8.95 but when I went on line to check my transaction it show $10.74.
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	used	use	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	4:nmod:poss	_
+4	card	card	NOUN	NN	Number=Sing	2	obj	2:obj|6:nsubj:xsubj	_
+5	to	to	PART	TO	_	6	mark	6:mark	_
+6	purchase	purchase	VERB	VB	VerbForm=Inf	2	xcomp	2:xcomp	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	8:det	_
+8	meal	meal	NOUN	NN	Number=Sing	6	obj	6:obj	_
+9	on	on	ADP	IN	_	11	case	11:case	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	11:det	_
+11	menu	menu	NOUN	NN	Number=Sing	8	nmod	8:nmod:on	_
+12	and	and	CCONJ	CC	_	19	cc	19:cc	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	14:det	_
+14	total	total	NOUN	NN	Number=Sing	19	nsubj	19:nsubj	_
+15	on	on	ADP	IN	_	17	case	17:case	_
+16	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	17:nmod:poss	_
+17	receipt	receipt	NOUN	NN	Number=Sing	14	nmod	14:nmod:on	_
+18	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	cop	19:cop	_
+19	$	$	SYM	$	_	2	conj	2:conj:and	SpaceAfter=No
+20	8.95	8.95	NUM	CD	NumType=Card	19	nummod	19:nummod	_
+21	but	but	CCONJ	CC	_	32	cc	32:cc	_
+22	when	when	SCONJ	WRB	PronType=Int	24	mark	24:mark	_
+23	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	24:nsubj	_
+24	went	go	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	advcl	32:advcl:when	_
+25	on	on	ADP	IN	_	26	case	26:case	_
+26	line	line	NOUN	NN	Number=Sing	24	obl	24:obl:on	_
+27	to	to	PART	TO	_	28	mark	28:mark	_
+28	check	check	VERB	VB	VerbForm=Inf	24	advcl	24:advcl:to	_
+29	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	30	nmod:poss	30:nmod:poss	_
+30	transaction	transaction	NOUN	NN	Number=Sing	28	obj	28:obj	_
+31	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	32	nsubj	32:nsubj	_
+32	show	show	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	2:conj:and	_
+33	$	$	SYM	$	_	32	obj	32:obj	SpaceAfter=No
+34	10.74	10.74	NUM	CD	NumType=Card	33	nummod	33:nummod	SpaceAfter=No
+35	.	.	PUNCT	.	_	2	punct	2:punct	_
+
+# sent_id = reviews-162253-0003
+# text = There is something wrong or maybe the individual made a mistake but to me that is not integrity.
+1	There	there	PRON	EX	_	2	expl	2:expl	_
+2	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	something	something	PRON	NN	Number=Sing	2	nsubj	2:nsubj	_
+4	wrong	wrong	ADJ	JJ	Degree=Pos	3	amod	3:amod	_
+5	or	or	CCONJ	CC	_	9	cc	9:cc	_
+6	maybe	maybe	ADV	RB	_	9	advmod	9:advmod	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	8:det	_
+8	individual	individual	NOUN	NN	Number=Sing	9	nsubj	9:nsubj	_
+9	made	make	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	2:conj:or	_
+10	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	11:det	_
+11	mistake	mistake	NOUN	NN	Number=Sing	9	obj	9:obj	_
+12	but	but	CCONJ	CC	_	18	cc	18:cc	_
+13	to	to	ADP	IN	_	14	case	14:case	_
+14	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	18	obl	18:obl:to	_
+15	that	that	PRON	DT	Number=Sing|PronType=Dem	18	nsubj	18:nsubj	_
+16	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+17	not	not	PART	RB	_	18	advmod	18:advmod	_
+18	integrity	integrity	NOUN	NN	Number=Sing	2	conj	2:conj:or	SpaceAfter=No
+19	.	.	PUNCT	.	_	2	punct	2:punct	_
+
+# newdoc id = reviews-202709
+# sent_id = reviews-202709-0001
+# newpar id = reviews-202709-p0001
+# text = Elmira, your the best!
+1	Elmira	Elmira	PROPN	NNP	Number=Sing	6	vocative	6:vocative	SpaceAfter=No
+2	,	,	PUNCT	,	_	6	punct	6:punct	_
+3-4	your	_	_	_	_	_	_	_	_
+3	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	6	nsubj	6:nsubj	_
+4	r	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	6:det	_
+6	best	good	ADJ	JJS	Degree=Sup	0	root	0:root	SpaceAfter=No
+7	!	!	PUNCT	.	_	6	punct	6:punct	_
+
+# sent_id = reviews-202709-0002
+# newpar id = reviews-202709-p0002
+# text = All I can say is that Elmira you are the best Ive experienced, never before has the seamstress done a perfect job until i met you.
+1	All	all	DET	DT	_	5	nsubj	5:nsubj	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
+3	can	can	AUX	MD	VerbForm=Fin	4	aux	4:aux	_
+4	say	say	VERB	VB	VerbForm=Inf	1	acl:relcl	1:acl:relcl	_
+5	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	that	that	SCONJ	IN	_	11	mark	11:mark	_
+7	Elmira	Elmira	PROPN	NNP	Number=Sing	11	vocative	11:vocative	_
+8	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	11	nsubj	11:nsubj	_
+9	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	11:det	_
+11	best	good	ADJ	JJS	Degree=Sup	5	ccomp	5:ccomp	_
+12-13	Ive	_	_	_	_	_	_	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	14:nsubj	_
+13	ve	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	experienced	experience	VERB	VBN	Tense=Past|VerbForm=Part	11	acl:relcl	11:acl:relcl	SpaceAfter=No
+15	,	,	PUNCT	,	_	5	punct	5:punct	_
+16	never	never	ADV	RB	_	17	advmod	17:advmod	_
+17	before	before	ADV	RB	_	21	advmod	21:advmod	_
+18	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	21:aux	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	20:det	_
+20	seamstress	seamstress	NOUN	NN	Number=Sing	21	nsubj	21:nsubj	_
+21	done	do	VERB	VBN	Tense=Past|VerbForm=Part	5	parataxis	5:parataxis	_
+22	a	a	DET	DT	Definite=Ind|PronType=Art	24	det	24:det	_
+23	perfect	perfect	ADJ	JJ	Degree=Pos	24	amod	24:amod	_
+24	job	job	NOUN	NN	Number=Sing	21	obj	21:obj	_
+25	until	until	SCONJ	IN	_	27	mark	27:mark	_
+26	i	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	27:nsubj	_
+27	met	meet	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	advcl	21:advcl:until	_
+28	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	27	obj	27:obj	SpaceAfter=No
+29	.	.	PUNCT	.	_	5	punct	5:punct	_
+
+# sent_id = reviews-202709-0003
+# text = I recommend you to everyone in Calgary, as she is a professional and the cost for her was low.
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	recommend	recommend	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	2	obj	2:obj	_
+4	to	to	ADP	IN	_	5	case	5:case	_
+5	everyone	everyone	PRON	NN	Number=Sing	2	obl	2:obl:to	_
+6	in	in	ADP	IN	_	7	case	7:case	_
+7	Calgary	Calgary	PROPN	NNP	Number=Sing	5	nmod	5:nmod:in	SpaceAfter=No
+8	,	,	PUNCT	,	_	2	punct	2:punct	_
+9	as	as	SCONJ	IN	_	13	mark	13:mark	_
+10	she	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+11	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+12	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	13:det	_
+13	professional	professional	NOUN	NN	Number=Sing	2	advcl	2:advcl:as	_
+14	and	and	CCONJ	CC	_	20	cc	20:cc	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	16:det	_
+16	cost	cost	NOUN	NN	Number=Sing	20	nsubj	20:nsubj	_
+17	for	for	ADP	IN	_	18	case	18:case	_
+18	her	she	PRON	PRP	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nmod	16:nmod:for	_
+19	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	20:cop	_
+20	low	low	ADJ	JJ	Degree=Pos	13	conj	2:advcl:as|13:conj:and	SpaceAfter=No
+21	.	.	PUNCT	.	_	2	punct	2:punct	_
+
+# newdoc id = reviews-140302
+# sent_id = reviews-140302-0001
+# newpar id = reviews-140302-p0001
+# text = 5 star detail job
+1	5	5	NUM	CD	NumType=Card	2	nummod	2:nummod	_
+2	star	star	NOUN	NN	Number=Sing	4	compound	4:compound	_
+3	detail	detail	NOUN	NN	Number=Sing	4	compound	4:compound	_
+4	job	job	NOUN	NN	Number=Sing	0	root	0:root	_
+
+# sent_id = reviews-140302-0002
+# newpar id = reviews-140302-p0002
+# text = I took my Mustang here and it looked amazing after they were done, they did a great job, I'm very satisfied with the results.
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	took	take	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	4:nmod:poss	_
+4	Mustang	Mustang	PROPN	NNP	Number=Sing	2	obj	2:obj	_
+5	here	here	ADV	RB	PronType=Dem	2	advmod	2:advmod	_
+6	and	and	CCONJ	CC	_	8	cc	8:cc	_
+7	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	nsubj	8:nsubj|9:nsubj:xsubj	_
+8	looked	look	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	2:conj:and	_
+9	amazing	amazing	ADJ	JJ	Degree=Pos	8	xcomp	8:xcomp	_
+10	after	after	SCONJ	IN	_	13	mark	13:mark	_
+11	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+12	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	cop	13:cop	_
+13	done	done	ADJ	JJ	Degree=Pos	8	advcl	8:advcl:after	SpaceAfter=No
+14	,	,	PUNCT	,	_	2	punct	2:punct	_
+15	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	16:nsubj	_
+16	did	do	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+17	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	19:det	_
+18	great	great	ADJ	JJ	Degree=Pos	19	amod	19:amod	_
+19	job	job	NOUN	NN	Number=Sing	16	obj	16:obj	SpaceAfter=No
+20	,	,	PUNCT	,	_	2	punct	2:punct	_
+21-22	I'm	_	_	_	_	_	_	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	24:nsubj	_
+22	'm	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	24	cop	24:cop	_
+23	very	very	ADV	RB	_	24	advmod	24:advmod	_
+24	satisfied	satisfied	ADJ	JJ	Degree=Pos	2	parataxis	2:parataxis	_
+25	with	with	ADP	IN	_	27	case	27:case	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	27:det	_
+27	results	result	NOUN	NNS	Number=Plur	24	obl	24:obl:with	SpaceAfter=No
+28	.	.	PUNCT	.	_	2	punct	2:punct	_
+
+# sent_id = reviews-140302-0003
+# text = The paint and wheels looked like glass and the interior looked new!
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	2:det	_
+2	paint	paint	NOUN	NN	Number=Sing	5	nsubj	5:nsubj	_
+3	and	and	CCONJ	CC	_	4	cc	4:cc	_
+4	wheels	wheel	NOUN	NNS	Number=Plur	2	conj	2:conj:and|5:nsubj	_
+5	looked	look	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	like	like	ADP	IN	_	7	case	7:case	_
+7	glass	glass	NOUN	NN	Number=Sing	5	obl	5:obl:like	_
+8	and	and	CCONJ	CC	_	11	cc	11:cc	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	10:det	_
+10	interior	interior	NOUN	NN	Number=Sing	11	nsubj	11:nsubj|12:nsubj:xsubj	_
+11	looked	look	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	conj	5:conj:and	_
+12	new	new	ADJ	JJ	Degree=Pos	11	xcomp	11:xcomp	SpaceAfter=No
+13	!	!	PUNCT	.	_	5	punct	5:punct	_
+
+# sent_id = reviews-140302-0004
+# text = Also, they have great customer service and a very knowledgeable staff
+1	Also	also	ADV	RB	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	,	_	4	punct	4:punct	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+4	have	have	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	great	great	ADJ	JJ	Degree=Pos	7	amod	7:amod	_
+6	customer	customer	NOUN	NN	Number=Sing	7	compound	7:compound	_
+7	service	service	NOUN	NN	Number=Sing	4	obj	4:obj	_
+8	and	and	CCONJ	CC	_	12	cc	12:cc	_
+9	a	a	DET	DT	Definite=Ind|PronType=Art	12	det	12:det	_
+10	very	very	ADV	RB	_	11	advmod	11:advmod	_
+11	knowledgeable	knowledgeable	ADJ	JJ	Degree=Pos	12	amod	12:amod	_
+12	staff	staff	NOUN	NN	Number=Sing	7	conj	4:obj|7:conj:and	_
