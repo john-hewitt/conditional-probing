@@ -31,7 +31,7 @@ Written for the paper [Conditional probes: measuring usable information beyond a
 
 1. Run your first experiment using a provided config file. This experiment trains and reports a part-of-speech probe on layer 5 of the `roberta-base` model.
 
-        python vinfo/experiment.py example/roberta768-upos-layer5-example.yaml
+        python vinfo/experiment.py example/roberta768-upos-layer5-example-cpu.yaml
 
 1. Take a look at the config file, `example/roberta768-upos-layer5-example.yaml`. It states that the results and probe parameters are saved to `example/`, a directory that would've been created if it hadn't already existed. If your experiment ran without error, you should see the following files in that directory:
 

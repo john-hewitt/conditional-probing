@@ -175,7 +175,7 @@ class HuggingfaceData(InitYAMLObject):
   yaml_tag = '!HuggingfaceData'
   def __init__(self, args, model_string, cache=None):
     print('Constructing HuggingfaceData of {}'.format(model_string))
-    self.tokenizer = AutoTokenizer.from_pretrained(model_string)
+    self.tokenizer = AutoTokenizer.from_pretrained(model_string) #, add_prefix_space=True)
     self.args = args
     self.cache = cache
     self.task_name = 'hfacetokens.{}'.format(model_string)
@@ -277,7 +277,7 @@ class HuggingfaceData(InitYAMLObject):
     hface_character_to_deptb_character_alignment = self.levenshtein_matrix(hface_string, raw_string)
     unnormalized_alignment = torch.matmul(torch.matmul(hface_token_to_hface_string_alignment.to(self.args['device']), hface_character_to_deptb_character_alignment.to(self.args['device'])),
           torch.matmul(ptb_token_to_ptb_string_alignment.to(self.args['device']), ptb_to_deptb_alignment.to(self.args['device']).t()).t())
-    return (unnormalized_alignment / torch.sum(unnormalized_alignment, dim=0)).cpu(), hface_tokens
+    return (unnormalized_alignment / torch.sum(unnormalized_alignment, dim=0)).cpu(), hface_tokens, raw_string
 
   def _setup_cache(self):
     """
@@ -379,11 +379,12 @@ class HuggingfaceData(InitYAMLObject):
 
 
   def _tensor_of_sentence(self, sentence, split):
-    alignment, wordpiece_strings = self.hface_ontonotes_alignment(sentence)
+    alignment, wordpiece_strings, raw_string = self.hface_ontonotes_alignment(sentence)
     # add [SEP] and [CLS] empty alignments
     empty = torch.zeros(1, alignment.shape[1])
     alignment = torch.cat((empty, alignment, empty))
-    wordpiece_indices = torch.tensor(self.tokenizer.encode(wordpiece_strings))
+    #wordpiece_indices = torch.tensor(self.tokenizer(wordpiece_strings)
+    wordpiece_indices = torch.tensor(self.tokenizer(raw_string).input_ids) #, is_split_into_words=True))
     return wordpiece_indices, alignment
 
   def _naive_tensor_of_sentence(self, sentence, split_string):

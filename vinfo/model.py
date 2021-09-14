@@ -80,7 +80,8 @@ class HuggingfaceModel(nn.Module, InitYAMLObject):
       to the corpus-given tokens
     """
     annotation, alignment = batch
-    _, _, hiddens = self.huggingface_model(annotation)
+    #_, _, hiddens = self.huggingface_model(annotation)
+    hiddens = self.huggingface_model(annotation).hidden_states
     return torch.bmm(hiddens[self.index].transpose(1,2), alignment).transpose(1,2)
 
 
