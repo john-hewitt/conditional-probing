@@ -260,9 +260,14 @@ and named entity recognition has its own `NERReporter`, which calls the Stanza l
 ## Config recipes
 
 ### Named Entity Recognition config recipe
-`todo`
+For an example of an NER config (e.g., using span-based eval), see
+
+        configs/round1/named_entities/roberta768/layer0.yaml
+
 ### SST2 config recipe
-`todo`
+For an example of a sentiment config (e.g., averaging the word embeddings for a sentence embedding), see
+
+        configs/round1/sst2/roberta768/layer0.yaml
 
 # Data preparation
 
