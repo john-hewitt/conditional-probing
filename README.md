@@ -1,4 +1,4 @@
-# vinfo-probing
+# conditional-probing
 
 Codebase for easy specification of variational (conditional) information probe experiments.
 
