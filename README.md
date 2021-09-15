@@ -12,7 +12,7 @@ Highlights:
  - Change out classes specifying probes or representations directly through YAML configs instead of `if` statements in code.
 
 
-Written for the paper [Conditional probes: measuring usable information beyond a baseline]().
+Written for the paper [Conditional probing: measuring usable information beyond a baseline]().
 
 ## Installing and getting started
 1. Clone the repository.
