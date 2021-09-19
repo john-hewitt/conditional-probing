@@ -272,24 +272,31 @@ For an example of a sentiment config (e.g., averaging the word embeddings for a 
 ## Ontonotes
 
 See the `scripts/ontonotes_scripts` directory for notes on how we prep ontonotes.
-If you don't care, and just want the data, it's as easy as:
+The scripts we use exactly recreate the splits of [Strubell et al., 2017](https://arxiv.org/pdf/1702.02098.pdf), a well-used split that, due to changes in preprocessing script versioning and link rot over the years of CoNLL and Ontonotes, had become (to us) difficult to re-create. As such, to the greatest extent possible, we just paste the exact scripts here instead of linking to them.
 
-Let `ldc_ontonotes_path` be the path to your LDC download of `Ontonotes 5.0`, that is, `LDC2013T19`. Mine looks like `/scr/corpora/ldc/2013/LDC2013T19/ontonotes-release-5.0/data/files/data/`.
+If you just want the data, it's a few steps:
 
-Then all you have to run is
+Let `ldc_ontonotes_path` be the path to your LDC download of `Ontonotes 5.0`, that is, `LDC2013T19`. Mine looks like `/scr/corpora/ldc/2013/LDC2013T19/ontonotes-release-5.0/data/files/data/`. Unfortunately, we can't host this for you.
+
+Next, due to some regrettable firewalling, our script to download the train/dev/test split information fails, so you have to navigate via a browser to:
+
+      https://cemantix.org/conll/2012/download/
+
+and manually download `conll-2012-train.v4.tar.gz`, `conll-2012-development.v4.tar.gz`, and then navigate to the `test` folder and download `conll-2012-test-key.tar.gz`. Place these files in the `scripts/ontonotes_scripts/` directory of this repository.
+
+Now, run
 
 ```
 cd scripts/ontonotes_scripts
 ldc_ontonotes_path=/scr/corpora/ldc/2013/LDC2013T19/ontonotes-release-5.0/data/files/data/
-bash prep_ontonotes.sh $ldc_onotonotes_path
+bash prep_ontonotes_v4.sh $ldc_onotonotes_path
 ```
 
 Nice. 
 
 Statistics:
 
-|                     | Train     | Dev     | Test    | Conll-2012-test |
-|---------------------|-----------|---------|---------|-----------------|
-| Sentences           | 111,707   | 15,161  | 11,696  | 9,479           |
-| Tokens              | 2,100,642 | 292,052 | 216,628 | 169,547         |
-| Last annotated line | 2209566   | 306802  | 228053  | 179057          |
+|                     | Train     | Dev     | Test    |
+|---------------------|-----------|---------|---------|
+| Sentences           |  59,924   | 8,528   | 8,262   |
+| Tokens              | 1,088,503 | 147,724 | 152,728 |
