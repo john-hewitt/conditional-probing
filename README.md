@@ -1,6 +1,6 @@
 # conditional-probing
 
-Codebase for easy specification of variational (conditional) information probe experiments.
+Codebase for easy specification of (conditional) (V-information) probing experiments.
 
 Highlights:
  - **Conditional probing**: measure only the aspects of property that aren't explainable by the baseline of your choice.
