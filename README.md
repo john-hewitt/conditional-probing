@@ -249,6 +249,14 @@ and named entity recognition has its own `NERReporter`, which calls the Stanza l
 
 ## Config recipes
 
+### Replicating the EMNLP 2021 paper
+Take a look at our [CodaLab executable paper](https://worksheets.codalab.org/worksheets/0x46190ef741004a43a2676a3b46ea0c76) for the exact bash scripts we ran to reproduce all the numbers in the paper.
+The configs that govern each of the experiments are under
+
+        configs/codalab/round1/{task_name}/roberta768/layer-*.yaml
+
+where `task_name` is one of `ptb_pos, upos, dep_rel, named_entities, sst2`.
+
 ### Named Entity Recognition config recipe
 For an example of an NER config (e.g., using span-based eval), see
 
