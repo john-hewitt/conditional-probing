@@ -3,10 +3,11 @@
 # Download the OntoNotes CoNLL2012 v4 split files,
 # get things organized and remove unnecessary files.
 
-echo "Downloading v4 split data..."
-wget http://conll.cemantix.org/2012/download/conll-2012-train.v4.tar.gz
-wget http://conll.cemantix.org/2012/download/conll-2012-development.v4.tar.gz
-wget http://conll.cemantix.org/2012/download/test/conll-2012-test-key.tar.gz
+# New firewalling keeps this from working; as stated in the README, you have to download these yourself.
+#echo "Downloading v4 split data..."
+#wget http://conll.cemantix.org/2012/download/conll-2012-train.v4.tar.gz
+#wget http://conll.cemantix.org/2012/download/conll-2012-development.v4.tar.gz
+#wget http://conll.cemantix.org/2012/download/test/conll-2012-test-key.tar.gz
 
 # decompress things into conll-2012 folder
 tar zxf conll-2012-train.v4.tar.gz
