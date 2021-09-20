@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="header.png" width="650" title="hover text" alt="Three probe setups. First using both baseline and representation as input, achieving 100% accuracy. . Second using just baseline, achieving 75%; third using just representation, achieving 25%.">
+</p>
+
 # conditional-probing
 
 Codebase for easy specification of (conditional) (V-information) probing experiments.
