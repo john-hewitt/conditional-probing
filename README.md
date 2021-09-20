@@ -304,3 +304,16 @@ Statistics:
 |---------------------|-----------|---------|---------|
 | Sentences           |  59,924   | 8,528   | 8,262   |
 | Tokens              | 1,088,503 | 147,724 | 152,728 |
+
+# Citation
+
+If you use this repository, please cite:
+
+      @InProceedings{hewitt2021conditional,
+        author =      "Hewitt, John and Ethayarajh, Kawin and Liang, Percy and Manning, Christopher D.",
+        title =       "Conditional probing: measuring usable information beyond a baseline",
+        booktitle =   "Conference on Empirical Methods in Natural Language Processing",
+        year =        "2021",
+        publisher =   "Association for Computational Linguistics",
+        location =    "Punta Cana, Dominican Republic",
+      }
